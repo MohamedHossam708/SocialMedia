@@ -1,5 +1,5 @@
 import React from "react";
-import PostLayout from "../../components/postLayout/postLayout";
+import PostLayout from "../../components/postLayout/postLayout.jsx";
 
 const UserProfile = () => {
   return (
