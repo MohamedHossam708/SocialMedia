@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import Typefield from "../../components/utils/Typefield";
-import validationSchema from "./valid";
+import validationSchema from "./Valid.jsx";
 import { handelSignIn } from "./api_Handler";
 import Button from "../../components/utils/Button";
 import logo from "../../assets/Logomark.png";
