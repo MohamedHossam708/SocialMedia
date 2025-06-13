@@ -1,6 +1,6 @@
 import { Navigate, Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
-import Sidebar from "../../pages/userProfile/SideBar";
+import Sidebar from "../../pages/userProfile/Sidebar.jsx"
 import { env } from "../../environment/environment";
 
 const BlankLayout = () => {
