@@ -58,12 +58,7 @@ const SignIn = () => {
                 repeatType: "loop",
               },
               rotate: [0, 10, -10, 0],
-              transition: {
-                duration: 0.6,
-                ease: "easeInOut",
-                repeat: Infinity,
-                repeatType: "loop",
-              },
+              
             }}
             className="mb-4  rounded-full"
             src={logo}
