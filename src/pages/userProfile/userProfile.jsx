@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Sidebar from "./SideBar";
 import ProfileHeader from "./ProfileHeader";
 import ProfileTabs from "./ProfileTabs";
 import { env } from "../../environment/environment";
