@@ -18,8 +18,8 @@ const router = createHashRouter([
     element: <SignIn />,
   },
   {
-    path: "/",
-    element: <SignIn />,
+    path: "",
+    element: <BlankLayout />,
     children: [
       {
         index: true,
