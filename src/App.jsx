@@ -3,10 +3,10 @@ import Home from "./pages/home/home";
 import { CommentProvider } from "./contexts/commentContext";
 import BlankLayout from "./layouts/blank-layout/blankLayout";
 import { PostsProvider } from "./contexts/postsContext";
-import UserProfile from "./pages/userProfile/UserProfile";
 import Register from "./pages/Register/Register";
 import SignIn from "./pages/Sign in/SignIn";
 import NotFound from "./pages/NotFount/NotFound";
+import UserProfile from "./pages/userProfile/userProfile";
 
 const router = createHashRouter([
   {
