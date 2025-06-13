@@ -1,4 +1,7 @@
-import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
+import {
+  createHashRouter,
+  RouterProvider,
+} from "react-router-dom";
 import Home from "./pages/home/home";
 import { CommentProvider } from "./contexts/commentContext";
 import BlankLayout from "./layouts/blank-layout/blankLayout";
@@ -10,7 +13,7 @@ import UserProfile from "./pages/userProfile/userProfile";
 
 const router = createHashRouter([
   {
-    path: "register",
+    path: "/register",
     element: <Register />,
   },
   {
@@ -18,7 +21,7 @@ const router = createHashRouter([
     element: <SignIn />,
   },
   {
-    path: "",
+    path: "/",
     element: <BlankLayout />,
     children: [
       {
@@ -34,7 +37,7 @@ const router = createHashRouter([
         element: <UserProfile />,
       },
       {
-        path: "*", 
+        path: "*",
         element: <NotFound />,
       },
     ],
