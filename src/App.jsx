@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/home/home";
 import { CommentProvider } from "./contexts/commentContext";
 import BlankLayout from "./layouts/blank-layout/blankLayout";
@@ -8,7 +8,7 @@ import Register from "./pages/Register/Register";
 import SignIn from "./pages/Sign in/SignIn";
 import NotFound from "./pages/NotFount/NotFound";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "register",
     element: <Register />,
@@ -34,13 +34,13 @@ const router = createBrowserRouter([
         element: <UserProfile />,
       },
       {
-        path: "*", // ✅ Catch-all route inside layout
+        path: "*", 
         element: <NotFound />,
       },
     ],
   },
   {
-    path: "*", // ✅ Catch-all route outside layout (e.g. /random-url)
+    path: "*",
     element: <NotFound />,
   },
 ]);
